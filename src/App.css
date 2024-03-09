@@ -1,38 +1,255 @@
-.App {
-  text-align: center;
+*{
+    margin: 0%;
+    padding: 0%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nevMain{
+    z-index: 1000;
+    border-top: 1px solid gray;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 78px;
+    position:fixed ;
+    bottom: 0;
+    font-family: Humane, sans-serif;
+    font-size: 22px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+    color: white;
+    width: 58.6%;
+    display: flex;
+    align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Nbar{
+    color: rgba(187, 187, 187, 0.79);
+    width: 41.4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.Nbar>div{
+    font-weight:lighter;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Nbar>div:hover{
+    color: white;
+    cursor: pointer;
 }
+.mobD{
+    display: none;
+}
+.mobD:hover{
+    cursor: pointer;
+}
+.home{
+    background-color: black;
+    color: rgba(187, 187, 187, 0.79);
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.home_backgroundVideo{
+        background-position: 50%;
+        background-size: cover;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: calc(100svh - 72px);
+}
+.vidcont{
+    font-family: Humane, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 364px;
+    position: relative;
+}
+.vidcont>div{
+    color: rgb(222, 216, 216);
+}
+#lernbtn{
+    border: none;
+    background-color: rgba(62, 62, 62, 0.578);
+}
+.homebtn{
+    height: 51px;
+    width: 201px;
+    font-size: larger;
+    font-weight: 600;
+}
+.homebtn:hover{
+    cursor: pointer;
+}
+.headFilm{
+    box-sizing: border-box;
+    font-family: Humane, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 28px;
+}
+.headFilm>h3{
+    color: white;
+}
+.headFilm>img{
+    width: 34px;
+}
+.headFilm>img:hover{
+    cursor: pointer;
+}
+.cont{
+    height: 100%;
+    margin-top: 6vh;
+    margin-bottom: 78px;
+}
+.cont2{
+    padding: 24px;
+    font-family: Humane, sans-serif;
+    font-size:15px;
+}
+.cont3{
+    font-family: Humane, sans-serif;
+    padding-top: 52px;
+    padding-bottom: 24px;
+}
+.cont3>h1{
+    margin-left: 24px;
+    font-size: 46px;
+    font-weight: lighter;
+}
+.cont41>div:hover{
+    cursor: pointer;
+    color: white;
+}
+button{
+    font-size: medium;
+    margin-left: 24px;
+    width: 196px;
+    height: 45px;
+    border-radius: 18px;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+}
+button:hover{
+    background-color: rgba(41, 41, 41, 0.8);
+}
+.cont4{
+    margin-top: 42px;
+    display: flex;
+}
+.cont41{
+    display: flex;
+    width: 68%;
+    font-family: Humane, sans-serif;
+}
+.cont41>div{
+    margin-left: 19px;
+    display: flex;
+    align-items: center;
+}
+.cont42{
+    font-family: Humane, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 31%;
+    align-items: center;
+}
+.cont42>img{
+    width: 39px;
+    height: 39px;
+}
+.cont42>img:hover{
+    cursor: pointer;
+    opacity: 65%;
+}
+.footer{
+    display: none;
+}
+ @media screen and (max-width:1155px) {
+    .nevMain{
+        position: fixed;
+        top: 0;
+    }
+    .headFilm{
+        margin-top: 105px;
+    }
+    .vidcont{
+        margin-top: 264px;
+    }
+    .cont{
+        margin-top: 4vh;
+    }
+    .cont3{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont4{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont41{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont41>div{
+        margin-top: 9px;
+    }
+    .cont42{
+        width: 21vw;
+        margin-top: 35px;
+        margin-left: 9.6px;
+    }
+    .footer{
+        margin-top: 18px;
+        margin-left: 17px;
+        display: block;
+    }
+    .footer1{
+        display: none;
+    }
+    .Nbar{
+        display: none;
+    }
+    .nevMain{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobD{
+        width: 12%;
+        display: flex;
+        align-items: center;
+    }
+    .expanded-container {
+        background-color: black;
+        height: 91vh;
+        position: absolute;
+        top: 72px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 1;
+      }
+      .expanded-container>div{
+        margin-top: 15px;
+      }
+      .expanded-container>div:hover{
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.433);
+      }
+      .btn{
+        display: flex;
+        flex-direction: column;
+      }
+      .homebtn{
+        margin-top: 8px;
+      }
+      .expanded-container>span{
+        font-size: 1px;
+        position: fixed;
+        bottom: 2px;
+      }
+ }
